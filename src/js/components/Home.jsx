@@ -12,14 +12,14 @@ const Home = () => {
         }
     };
 
-    const deleteTodo = (i) => {
-        setTodos(todos.filter((_, i) => i !== i));
+    const deleteTodo = (indiceABorrar) => {
+        setTodos(todos.filter((_, indexedDB) => indexedDB !== indiceABorrar));
     };
 
     return (
         <div className="container mt-5">
             <h1 className="text-center todo-header">Tareas Diarias</h1>
-            
+
             <div className="todo-container border-bottom shadow-sm">
                 <input
                     type="text"
